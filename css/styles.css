@@ -1,33 +1,86 @@
 body {
-  background-color: pink;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(27, 161, 173);
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image:url("../images/bg-pattern-top.svg"),
+                     url("../images/bg-pattern-bottom.svg");
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -100% 160%, 180% -90%;
 }
 
 
-.card {
+
+ul {
+list-style: none;
+
+
+}
+
+li {
+  display: inline-block;
+  position: relative;
+
+
+}
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-background-color: white ;
-margin: auto 700px;
+  .card {
+   display: inline-block;
+    background-color: white;
+    max-width: 350px;
+    height: 365px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.2);
+  }
 
-}
-.top-background {
-  background-color: blue;
-  padding: 100px 20px 0 20px;
-position: relative;
-}
-.prof-photo{
-    height: 70px;
-    position: relative;
-    left:15px;
-    top:-30px;
-}
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+.main-info {
+  position: relative;
+  bottom: 40px;
+
+}
+.info-country {
+  color:  hsl(227, 10%, 46%);
+  font-size: 10px;
+  position: relative;
+  top: 15px;
+}
+
+.img-pattern {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.prof-picture {
+  position: relative;
+    display: flex;
+    margin: auto;
+    bottom: 60px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+
+  .detail-info {
+    padding: 0;
+  }
+
+.stats {
+padding: 0 25px 0 25px;
+font-size: 20px;
+}
+
+.label {
+margin: 0 auto;
+font-size: 10px;
+color:  hsl(227, 10%, 46%);
+position: relative;
+top: 5px;
+}
+
 
 /* Add some padding inside the card container */
-.bottom-container {
-padding: 2px 16px;
-}
